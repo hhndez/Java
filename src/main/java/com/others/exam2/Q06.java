@@ -9,11 +9,19 @@ import java.util.stream.Stream;
  */
 public class Q06 {
     public static void main(String ... args) {
+        /*
         Map map = new HashMap<>();
         map.put(1, "1");
+        Stream ds = map.values().stream().map(s -> Double.parseDouble(s));
+        System.out.println(ds.findFirst().get()); */
 
-        //Stream ds = map.values().stream().map(s -> Double.parseDouble(s));
-        //System.out.println(ds.findFirst().get());
+        //El codigo anterior no funciona, ya que map no tiene declarado que tipo debe ser.
+        //Para que funcione debe ser asi..
+        Map<Double, String> map = new HashMap();
+        map.put(1d, "1");
+        Stream ds = map.values().stream().map(s -> Double.parseDouble(s));
+        System.out.println(ds.findFirst().get());
+
 
     }
 }
