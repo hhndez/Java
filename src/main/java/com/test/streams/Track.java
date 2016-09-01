@@ -9,11 +9,11 @@ public class Track {
 
     private String name;
 
-    private int lenght;
+    private int length;
 
     public Track(final String name, final int length) {
         this.name = name;
-        this.lenght = length;
+        this.length = length;
     }
 
     public final String getName() {
@@ -21,6 +21,6 @@ public class Track {
     }
 
     public final int getLenght() {
-        return lenght;
+        return length;
     }
 }
